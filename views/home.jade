@@ -1,0 +1,62 @@
+extends layout
+
+block content
+    .jumbotron.bg-green-img
+        .container
+            h1 Webapps by David M
+            p Here you'll find some examples of my work. This page for example is entirely run in <b>Node.js</b> with Jade/Pug templating and a responsive <b>Bootstrap</b> frontend
+            p Checkout the entire source for all projects code here: 
+            a.btn.btn-success.btn-lg(href="https://github.com/Davor111" target ="_blank") Go to Github
+    .container
+        .row
+            .col-sm-6
+                h2.text-center Restaurant Search Demo
+                p A modern web interface that features real time search in a MongoDb 
+                a(data-scroll href="#mongo")
+                    img.img-responsive.grow.img-rounded(src='images/mongo_pic_2.png', id="test" style='width:100%', alt='Mongod Example') 
+            .col-sm-6
+                h2.text-center A simple CRM system
+                p A front to back CRM system entirely built in Google App Script with jQuery
+                a(data-scroll href="#gapps")
+                    img.img-responsive.grow.img-rounded(src='images/google_app_script.png', style='width:100%', alt='Google Script Example' ) 
+    .spacer
+    .jumbotron.bg-green-img(id="mongo")
+        .container
+                        h1 Restaurant Search Demo                
+                        p This is a MongoDb-jQuery-Node.js Search and Edit Demo. You can search a database of real restaurants and save/delete reservations for individual restaurants. It's optimized for Chrome and iOS/Android tablets. You can either add a new restaurant or you can search the current MongoDb with nearly 60.000 entries and create or delete appointments: 
+                        p Why don't you reserve a table at a nice restaurant?
+                        a.btn.btn-success.btn-lg(href="#") Go to project     
+        
+     .container
+            .row
+                                            .col-sm-7
+                                                .well.well-sm
+                                                    h2(style="margin-top: 0px") Search here! 
+                                                    p Look for a nice restaurant and reserve a table. Hit <b>enter</b> to display the first result. 
+                                                    .form-inline(role="form")
+                                                            .form-group(style="margin: 5px")
+                                                                label(for="restSearch" style="margin-right:5px") Search:
+                                                                input.form-control(id="restSearch" list='listid')
+                                                            .form-group(style="margin: 5px")
+                                                                button(type="button" onclick="emptyMe()" class="btn" data-toggle="modal" data-target="#myModal") Add new Restaurant
+                                                    div(id="detail" class = "moreInf")
+                                                        div(id="restSuccess" style="display: none;") 
+                                                    div(style="margin: 5px" id="result")         
+                                            .col-sm-5
+                                             .well.well-sm
+                                                h4 MongoDb and Node Pros:
+                                                ul
+                                                    li Fast and responsive database with high performance
+                                                    li database entries are files instead of tables, so fields can be added or left out
+                                                    li highly scalable
+                                                    li open-source 
+                                                h4 MongoDb and Node Cons:
+                                                ul
+                                                    li relatively new, fewer analyzing tools 
+                                                    li mySQL offers old and trusted environment that exports to Excel
+    .spacer 
+    include googleapp
+    .spacer                       
+    include contact      
+    include modals
+    .spacer

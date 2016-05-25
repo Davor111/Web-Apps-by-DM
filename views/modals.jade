@@ -1,0 +1,64 @@
+#myModal.modal.fade(role='dialog')
+      .modal-dialog(class="modal-sm")
+        // Modal content
+        .modal-content
+          .modal-header
+            button.close(type='button' onclick="emptyMe()", data-dismiss='modal') ×
+            h4.modal-title New Restaurant
+          .modal-body
+                .input
+                    span Name:
+                    input.form-control(type="text", id="restName")
+                .input
+                    span Address:
+                    input.form-control(id="restAddress")
+                .input
+                    span Cuisine:
+                    input.form-control(id="restCuisine")
+                button.btn.btn-default(type="button" id="saveButt" style="margin-top: 10px") Save
+                #myAlert.myalerts
+          .modal-footer
+            button.btn.btn-default(id= "closeBut" type='button', data-dismiss='modal' onclick="emptyMe()") Close
+   
+  #appointPop.modal.fade(role='dialog')
+      .modal-dialog(class="modal" style="max-width: 400px;")
+        // Modal content
+        .modal-content
+          .modal-header
+            button.close(type='button' onclick="emptyMe()", data-dismiss='modal') ×
+            #appTitle.h4.modal-title New Appointment
+          .modal-body
+            .form(role="form")
+                .form-group
+                    span Select how long you want to book a table:
+                    select#selectTime.form-control
+                        option 00:30 hours
+                        option 01:00 hours
+                        option 01:30 hours
+                        option 02:00 hours
+                        option 02:30 hours
+                        option 03:00 hours
+                        option 03:30 hours
+                        option 04:00 hours
+                        option 04:30 hours
+                        option 05:00 hours
+                .form-group
+                    span Your Name:
+                    input.form-control(type="text", id="appName")
+                .form-group
+                    button.btn.btn-default(type="button" id="saveApp" style="") Save
+                #myAppAlert.myalerts
+          .modal-footer
+            button.btn.btn-default(id= "closeAppBut" type='button', data-dismiss='modal' onclick="emptyMe()") Close
+     
+   #deletePopUp.modal.fade(role='dialog')
+      .modal-dialog(class="modal" style="max-width: 400px;")
+        // Modal content
+        .modal-content
+          .modal-header
+            button.close(type='button' data-dismiss='modal') ×
+            h4.modal-title Reservation deleted
+          .modal-body
+            #delMessage.p   
+          .modal-footer
+            button.btn.btn-default(type='button', data-dismiss='modal') Close          

@@ -1,0 +1,34 @@
+.jumbotron.bg-green-img(id="mongo")
+      .container
+                        h1 Restaurant Search Demo                
+                        p This is a MongoDb-jQuery-Node.js Search and Edit Demo. You can search a database of real restaurants and save/delete reservations for individual restaurants. It's optimized for Chrome and iOS/Android tablets. You can either add a new restaurant or you can search the current MongoDb with nearly 60.000 entries and create or delete appointments: 
+                        p Why don't you reserve a table at a nice restaurant?
+                        a.btn.btn-success.btn-lg(href="#") Go to project     
+        
+ .container
+            .row
+                .col-sm-7
+                  .well.well-sm
+                         h2(style="margin-top: 0px") Search here! 
+                         p Look for a nice restaurant and reserve a table. Hit <b>enter</b> to display the first result. 
+                         .form-inline(role="form")
+                                 .form-group(style="margin: 5px")
+                                    label(for="restSearch" style="margin-right:5px") Search:
+                                     input.form-control(id="restSearch" list='listid')
+                                 .form-group(style="margin: 5px")
+                                                                            button(type="button" onclick="emptyMe()" class="btn" data-toggle="modal" data-target="#myModal") Add new Restaurant
+                         div(id="detail" class = "moreInf")
+                             div(id="restSuccess" style="display: none;") 
+                         div(style="margin: 5px" id="result")         
+                .col-sm-5
+                  .well.well-sm
+                     h4 MongoDb and Node Pros:
+                     ul
+                         li Fast and responsive database with high performance
+                         li database entries are files instead of tables, so fields can be added or left out
+                         li highly scalable
+                         li open-source 
+                     h4 MongoDb and Node Cons:
+                     ul
+                         li relatively new, fewer analyzing tools 
+                         li mySQL offers old and trusted environment that exports to Excel      

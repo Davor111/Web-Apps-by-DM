@@ -1,0 +1,166 @@
+body {
+  padding-top: 50px;
+  font-family: Montserrat, sans-serif; 
+}
+/*
+::-webkit-scrollbar { 
+    display: none; 
+
+}
+*/
+.starter-template {
+/* padding: 40px 15px; */
+
+}
+
+.spacer {
+min-height: 400px;  
+}
+
+.grow {  transition: all .2s ease-in-out; }
+
+.grow:hover {  
+  box-shadow: 5px 0px 40px rgba(0,0,0, .2); 
+    transform: scale(1.01); 
+    }
+
+.navbar {
+  background-color:  #46b46b; 
+  border-color: #fff;
+  letter-spacing: 4px;
+  border-radius: 0;
+  font-size: 12px !important;
+  opacity: 0.9;
+}
+
+
+.navbar, .navbar .navbar-brand {
+    color: #fff !important;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #fff;
+}
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #46b46b !important;
+    background-color: #fff !important;
+}
+
+.navbar-nav  {
+    color: white !important;
+    background-color: #46b46b;
+}
+
+.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover {
+    color: #fff;
+    background-color: #46b46b;
+}
+
+
+.dropdown-menu {
+ letter-spacing: 2px;
+}
+
+
+
+/*Adjusting bootstrap pop up fix. To center it   */
+.modal {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) { 
+  .modal:before {
+    display: inline-block; 
+    vertical-align: middle;
+    content: " ";
+    height: 100%;
+  }
+
+}
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+
+
+/* General Styling */
+a {
+  color: #00B7FF;
+}
+
+.center-style {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.bg-green-img {
+ background-image: url("../images/jumbo-back.jpg");
+ background-size: cover
+}
+
+.grey {
+	  background: white;
+      box-shadow: 0 0 1px rgba(0,0,0, .4); 
+      margin-bottom: 10px;
+	    border-top: 1px solid #fff
+	  
+}
+
+.white {
+      background: white;
+      padding: 5px;
+}
+
+.butWeek {
+  display:inline;
+  overflow: auto;
+  white-space: nowrap;
+  margin:5px auto;
+}
+
+p.hov:hover{
+ color: dodgerblue;
+ cursor: pointer
+ }
+ 
+ .restHeading {
+	 margin-left: 5px; 
+	 margin-top: 2px; 
+	 font-size: 120%
+ }
+ .moreInf {
+	max-width: 650px;
+	height: auto;
+	padding: 5px;
+  padding-bottom: 0px;
+  margin-left: 0px;
+  margin-top: 10px;
+  border-radius: 5px;
+    /*border: 2px solid grey; */
+  display: none;
+}
+
+ .searchBox {
+	max-width: 650px; 
+	height: 890px;
+	padding: 5px;
+	margin-top: 30px;
+  border-radius: 5px;
+ /*background-color: #D5F5D9; */
+ }
+ 
+  .searchBoxTest {
+	max-width: 650px; 
+	height: auto;
+	margin-top: 5px;
+  border-radius: 5px; 
+  min-height: 20px;
+  padding: 10px;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  background-color: #f5f5f5;
+  border: 1px solid #e3e3e3;
+ }
